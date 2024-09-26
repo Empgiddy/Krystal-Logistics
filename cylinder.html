@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whitewings Food Delivery - Checkout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="logo">
+                <img src="./assets/kllogo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <h1>GAS CYLINDER REFILS CHECKOUT</h1>
+
+        <div class="form-details">
+            <form action="https://formspree.io/f/xpwavwag" method="POST">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone Number*</label>
+                <input type="number" id="phone" name="phone" required> 
+    
+                <div class="dropdown-group">
+                    <label for="campus">Select Campus:</label>
+                    <div class="dropdown">
+                        <select id="campus" name="campus">
+                            <option value=""></option>
+                            <option value="nyankpala">Nyankpala Campus</option>
+                            <option value="dungu">Dungu Campus</option>
+                            <option value="city-campus">City Campus</option>
+                            <option value="tatu">TaTU Campus</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <label for="location">Hostel Location*</label>
+                <input type="text" id="location" name="location" required>
+                
+                <div class="cylinder-group">
+                    <label for="cylinder">Select Cylinder Size:</label>
+                    <div class="dropdown">
+                        <select id="cylinder-sizes" name="cylinder-sizes">
+                            <option value=""></option>
+                            <option value="big">Big Size</option>
+                            <option value="mid">Medium Size</option>
+                            <option value="small">Small Size</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <input type="submit" value="PLACE ORDER"><br>
+            </form>     
+        </div>
+
+        <p id="price"></p>
+        
+        <div class="payment-process">
+            <h2>PAYMENT PROCESS</h2>
+            <p>
+                Pay for your service below. <br>
+                You can Pay via MTN MOMO or Vodafone Cash. <br>
+                <em><strong>MTN Momo: 055-509-2571</strong></em> <br>
+                <em><strong>Vodafone Cash: 020-382-1602</strong></em>
+                <h3>You would receive a call to confirm your order!</h3>
+            </p>
+        </div>
+        
+        <footer>
+            <p>We will love to hear from you! <br>
+            <a href="https://forms.gle/kZrDAMYNfr8xvN6G7">Help Us Improve!</a></p>
+            <small>COPYRIGHT © 2024 KRYSTAL LOGISTICS - ALL RIGHTS RESERVED.</small>
+        </footer>
+    </div>
+    <script src="./scripts/gasscript.js"></script>
+</body>
+</html>

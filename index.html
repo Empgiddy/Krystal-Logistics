@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krystal Logistics</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="./assets/kllogo.png" alt="Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="header">
+        <div class="header-image">
+          <img src="./assets/head.png" alt="Logo">
+        </div>
+        <div class="header-text">
+          <h1>WELCOME TO KRYSTAL LOGISTICS</h1>
+          <p>Unwind and enjoy the convenience of student life! Whether you're in need of groceries delivered right to your hostel, delicious meals brought to you, important items safely couriered, or assistance with refilling your gas cylinder, we've got you covered. You can rely on us to take care of all your needs, ensuring the utmost care and attention to detail, all while you focus on what really matters!</p>
+          <a href="about.html#about-con">Find Out More</a>
+        </div>
+      </div>
+      
+      <section class="services">
+        <h2>OUR SERVICES</h2>
+
+        <div class="grid-wrapper">
+          <div class="service">
+            <img src="./assets/food.png" alt="Service 1">
+            <h3>FOOD PURCHASE & DELIVERY</h3>
+            <p>Is it KFC? Fried Rice? TZ? Chocolates? We are here for you!</p>
+            <a href="services.html#food-purchase">Learn More</a>
+          </div>
+
+          <div class="service">
+            <img src="./assets/study.png" alt="Service 2">
+            <h3>STUDY MATERIALS & STUDENT ESSENTIALS</h3>
+            <p>Do you need study materials and other items?</p>
+            <a href="services.html#clothing-fashion">Learn More</a>
+          </div>
+
+          <div class="service">
+            <img src="./assets/electric.png" alt="Service 3">
+            <h3>ELECTRONICS & GADGETS</h3>
+            <p>Phone Chargers, Laptop accessories, etc. We are ready!</p>
+            <a href="services.html#electronics-gadgets">Learn More</a>
+          </div>
+
+          <div class="service">
+            <img src="./assets/gas.png" alt="Service 4">
+            <h3>GAS CYLINDER REFILS</h3>
+            <p>No pressure, no stress. Simply reach out to us!</p>
+            <a href="services.html#gas-cy">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section" id="contact-form">
+        <div class="form-wrapper">
+          <h2>CONTACT US TODAY</h2>
+          <p>We love our customers, so feel free to contact us during normal business hours.</p>
+          <p>KRYSTAL LOGISTICS</p>
+          <p>Call us on 055-509-2571</p>
+          <button class="dropdown-btn">Open Hours</button>
+            <div class="dropdown-content">
+              <ul class="hours-list">
+                <li><span>Monday:</span> 06:00am - 8:00pm</li>
+                <li><span>Tuesday:</span> 06:00am - 8:00pm</li>
+                <li><span>Wednesday:</span> 06:00am - 8:00pm</li>
+                <li><span>Thursday:</span> 06:00am - 8:00pm</li>
+                <li><span>Friday:</span> 06:00am - 8:00pm</li>
+                <li><span>Saturday:</span> 06:00am - 8:00pm</li>
+                <li><span>Sunday:</span> 12:00pm - 7:00pm</li>
+              </ul>
+            </div>
+
+          <form action="https://formspree.io/f/xpwavwag" method="POST">
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" required>
+            <label for="information">What information do you need?*</label>
+            <textarea id="information" name="information" rows="3" required></textarea>
+            <button type="submit">SEND</button>
+            <button type="button">Cancel</button>
+            <button type="button" onClick="openWhatsApp()">Contact us Via Whatsapp</button>
+          </form>
+          <h1 onClick="openWhatsApp()" id="wa">CLICK HERE TO ORDER VIA WHATSAPP!</h1>
+        </div>
+
+        <div class="image-container">
+          <img src="./assets/logi.png" alt="Image">
+        </div>
+      </section>
+      
+      <footer>
+        <p>We will love to hear from you! <br>
+          <a href="https://forms.gle/kZrDAMYNfr8xvN6G7">Help Us Improve!</a></p>
+        <small>COPYRIGHT © 2024 KRYSTAL LOGISTICS - ALL RIGHTS RESERVED.</small>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./scripts/scripts.js"></script>
+</body>
+</html>
